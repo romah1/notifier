@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package api;
+
+service Users {
+  rpc Register(RegisterRequest) returns (RegisterResponse);
+}
+
+message RegisterRequest {
+  string id = 1;
+}
+
+message RegisterResponse {
+  
+}
